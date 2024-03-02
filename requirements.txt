@@ -8,3 +8,4 @@ pypdf==4.0.2
 pyarabic==0.6.15
 langdetect==1.0.9
 sentence-transformers==2.4.0
+faiss-gpu==1.7.2
