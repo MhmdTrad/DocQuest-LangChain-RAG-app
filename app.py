@@ -13,6 +13,7 @@ import re
 from langdetect import detect
 from pyarabic.araby import normalize_hamza, strip_tatweel, strip_tashkeel 
 from htmlTemplates import css, bot_template, page_bg_img, footer
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 import warnings 
 warnings.filterwarnings('ignore')
@@ -35,8 +36,9 @@ def process_pdf(pdf_file):
         return  chunks
 def get_vectorstore(chunks):
     with st.spinner('Please wait 🌸'):
-        embeddings = HuggingFaceEmbeddings(model_name="distiluse-base-multilingual-cased-v1",
-                                                model_kwargs={'device': 'cpu'})
+        # embeddings = HuggingFaceEmbeddings(model_name="distiluse-base-multilingual-cased-v1",
+        #                                         model_kwargs={'device': 'cpu'})
+        embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
         vectorstore = FAISS.from_texts(texts=chunks, embedding=embeddings)
 
         return vectorstore
