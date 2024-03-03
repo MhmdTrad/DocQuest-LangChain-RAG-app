@@ -2,13 +2,13 @@ css = '''
 <style>
         /* Style for page title */
         .title {
-            color: Black;
+            color: white;
             font-weight: bold;
         }
         
         /* Style for header */
         .header {
-            color: black;
+            color: white;
             font-weight: bold;
         }
 
@@ -47,7 +47,7 @@ bot_template = '''
 
 
 # URL of the image
-image_url = "https://wallpapercave.com/wp/wp4430535.jpg"
+image_url = "https://images2.alphacoders.com/261/26102.jpg"
 
 # CSS for setting background image
 background_css = f"""
@@ -62,7 +62,7 @@ background_css = f"""
 page_bg_img = '''
 <style>
 .stApp {
-  background-image: url("https://wallpapercave.com/wp/wp4430535.jpg");
+  background-image: url("https://images2.alphacoders.com/261/26102.jpg");
   background-size: cover;
 }
 </style>
@@ -79,7 +79,7 @@ footer="""
         }
 
         .footer p {
-            color: black;
+            color: white;
             font-weight: bold;
             font-size: 0.9em;
         }
