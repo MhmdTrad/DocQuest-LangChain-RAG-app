@@ -41,10 +41,9 @@ def get_vectorstore(chunks):
 
 
 def process_question(user_question, vectorstore):
-    with st.spinner('Please wait for response😊...'):
-        
+    with st.spinner('Please wait for response😊...'):        
         llm = ChatGoogleGenerativeAI(model='gemini-pro', google_api_key=os.getenv("GOOGLE_API_KEY"),
-                                    temperature=0.3, convert_system_message_to_human=True, max_output_tokens= 5000 )
+                                    temperature=0.3, convert_system_message_to_human=True, max_output_tokens= 7000)
         prompt_template = """
                             **PDF Reader Expert**
 
