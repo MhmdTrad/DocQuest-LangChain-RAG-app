@@ -1,6 +1,5 @@
 from dotenv import load_dotenv
 import streamlit as st
-import os
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS
@@ -10,11 +9,12 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.embeddings import HuggingFaceEmbeddings
 import os
-
 import re
 from langdetect import detect
 from pyarabic.araby import normalize_hamza, strip_tatweel, strip_tashkeel 
-import streamlit as st
+
+import warnings 
+warnings.filterwarnings('ignore')
 
 def process_pdf(pdf_file):
     with st.spinner('Please wait 🌸'):
