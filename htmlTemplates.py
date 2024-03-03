@@ -20,7 +20,8 @@ css = '''
     background-color: #475063
 }
 .chat-message .avatar {
-  width: 20%;
+  float: right;
+   margin-left: 10px;
 }
 .chat-message .avatar img {
   max-width: 78px;
@@ -33,7 +34,7 @@ css = '''
 bot_template = '''
 <div class="chat-message bot">
     <div class="avatar">
-        <img src="https://cdn-icons-png.flaticon.com/512/6134/6134346.png" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
+        <img src="https://cdn-icons-png.flaticon.com/512/6134/6134346.png" style="max-height: 75px; max-width: 75px; border-radius: 50%; object-fit: cover;">
     </div>
     <div class="message">{{MSG}}</div>
 </div>
@@ -75,7 +76,7 @@ footer="""
 
         .footer p {
             font-weight: bold;
-            font-size: 1.3em;
+            font-size: 0.9em;
         }
     </style>
     <div class="footer">
