@@ -2,7 +2,7 @@ css = '''
 <style>
         /* Style for page title */
         .title {
-            color: white;
+            color: Black;
             font-weight: bold;
         }
         
@@ -13,7 +13,11 @@ css = '''
         }
 
 .chat-message {
-    padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    color: black;
 }
 
 .chat-message.bot {
@@ -36,14 +40,14 @@ bot_template = '''
     <div class="avatar">
         <img src="https://cdn-icons-png.flaticon.com/512/6134/6134346.png" style="max-height: 75px; max-width: 75px; border-radius: 50%; object-fit: cover;">
     </div>
-    <div class="message">{{MSG}}</div>
+    <div class="message" >{{MSG}}</div>
 </div>
 '''
 
 
 
 # URL of the image
-image_url = "https://www.wallpapertip.com/wmimgs/15-157566_ols-bookshelf-full-of-books.jpg"
+image_url = "https://wallpapercave.com/wp/wp4430535.jpg"
 
 # CSS for setting background image
 background_css = f"""
@@ -58,7 +62,7 @@ background_css = f"""
 page_bg_img = '''
 <style>
 .stApp {
-  background-image: url("https://www.wallpapertip.com/wmimgs/15-157566_ols-bookshelf-full-of-books.jpg");
+  background-image: url("https://wallpapercave.com/wp/wp4430535.jpg");
   background-size: cover;
 }
 </style>
@@ -75,6 +79,7 @@ footer="""
         }
 
         .footer p {
+            color: black;
             font-weight: bold;
             font-size: 0.9em;
         }
