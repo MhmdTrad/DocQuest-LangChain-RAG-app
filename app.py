@@ -2,7 +2,6 @@ from dotenv import load_dotenv
 import streamlit as st
 import os
 from htmlTemplates import css, bot_template, page_bg_img, footer
-from pdf_utils import process_pdf,get_vectorstore, process_question, PrepChunks
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS
