@@ -12,6 +12,7 @@ import os
 import re
 from langdetect import detect
 from pyarabic.araby import normalize_hamza, strip_tatweel, strip_tashkeel 
+from htmlTemplates import css, bot_template, page_bg_img, footer
 
 import warnings 
 warnings.filterwarnings('ignore')
